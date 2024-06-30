@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.file-manager,
+.library,
+.player,
+.playlist {
+    padding: 20px;
+}
+
+.file-manager input[type="file"] {
+    display: none;
+}
+
+.file-manager button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.file-manager button:hover {
+    background-color: #45a049;
+}
+
+.library ul,
+.playlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.library li,
+.playlist li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.library li:hover,
+.playlist li:hover {
+    background-color: #f1f1f1;
+}
+
+.player audio {
+    width: 100%;
+}

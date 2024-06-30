@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный плеер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <div class="file-manager">
+            <input type="file" id="fileInput" multiple>
+            <button onclick="loadFiles()">Загрузить</button>
+        </div>
+        <div class="library">
+            <ul id="songList"></ul>
+        </div>
+        <div class="player">
+            <audio id="audioPlayer" controls></audio>
+        </div>
+        <div class="playlist">
+            <ul id="playlist"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
